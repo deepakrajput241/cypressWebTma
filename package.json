@@ -1,0 +1,20 @@
+{
+  "name": "webtma7-e2e",
+  "version": "1.0.0",
+  "description": "End-to-end Cypress tests for WebTMA7",
+  "scripts": {
+    "format": "npx prettier --write .",
+    "smoke": "npx cypress run --env grepTags=@smoke"
+  },
+  "devDependencies": {
+    "@cypress/grep": "^3.1.5",
+    "@cypress/xpath": "^2.0.3",
+    "@faker-js/faker": "^7.6.0",
+    "@types/node": "^18.16.1",
+    "cypress": "^12.10.0",
+    "cypress-file-upload": "^5.0.8",
+    "prettier": "^2.8.8",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.0.4"
+  }
+}

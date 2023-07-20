@@ -1,0 +1,14 @@
+import { faker } from "@faker-js/faker";
+
+const data = { locationID: "Auto-BD-01-Automation-Area1" };
+
+it("Delete cabinet record", () => {
+  cy.login(Cypress.env("user1"));
+  cy.visit("#!/KeyCabinet/Create");
+  cy.EditInputElement("TagNumber", faker.datatype.number(999999999));
+  cy.fillCombobox("Location ID", 2);
+  cy.EditInputElement("Description", faker.random.words(5));
+  cy.clickSaveAndCheckResponse();
+
+  cy.clickDeleteAndCheckResponse();
+});

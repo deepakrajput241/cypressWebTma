@@ -1,0 +1,11 @@
+node_modules/
+
+generated/
+
+.vscode/
+
+**/*.jpg
+**/*.xlsx
+
+**/*.DS_Store
+
